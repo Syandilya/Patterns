@@ -195,3 +195,71 @@ If input is 9 then output is:
 1 1 7 7 7 7 7 7 7 
 1 8 8 8 8 8 8 8 8 
 9 9 9 9 9 9 9 9 9*/
+
+
+
+
+/*
+Pattern 3
+*/
+import java.util.*;
+class Main
+{
+    public static void main(String []args)
+    {   
+        Scanner sc= new Scanner(System.in);
+        int n=sc.nextInt();
+        if(n==0)
+        System.out.println("InvaliD Input");
+        if(n<0)
+        n=n*-1;
+        for(int i=n;0<n&&0<i;i--)
+        {
+         for(int j=n;0<j;j--)
+         {
+             if(j<=i)
+             System.out.print(i);
+             else
+             System.out.print(j);
+         }
+         System.out.println();
+        }
+        
+    }
+}
+/*
+Input 1  :    5
+
+Output 1: 
+
+55555
+
+54444
+
+54333
+
+54322
+
+54321
+
+Input 2  :    -8
+
+Output 2: 
+
+88888888
+
+87777777
+
+87666666
+
+87655555
+
+87654444
+
+87654333
+
+87654322
+
+87654321
+
+*/
